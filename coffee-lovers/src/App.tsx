@@ -8,7 +8,7 @@ function App() {
     <div className='App'>
         <body className='body'>
         <Header/>
-        <PageWindow/>
+        <PageWindow prop={window.getPage()}/>
         <Footer/>
         </body>
 

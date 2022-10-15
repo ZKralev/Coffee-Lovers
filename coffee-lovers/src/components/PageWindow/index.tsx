@@ -1,17 +1,19 @@
 import './page.css';
+import Home from "../PageWindow/pages/home"
+import { useEffect, useState } from 'react';
 
-function PageWindow() {
+
+function PageWindow(prop: any) {
+    // const [page, setPage] = useState('')
+    useEffect (() => {
+        
+    },[prop])
+    console.log(prop)
+
     return (
         <>
         <div>
-            <div className='Page'>
-            <h1> SOME INFORMATION: </h1>
-            <h1> SOME INFORMATION: </h1>
-            <h1> SOME INFORMATION: </h1>
-            <h1> SOME INFORMATION: </h1>
-            <h1> SOME INFORMATION: </h1>
-
-            </div>
+            <Home/>
         </div>
         </>
     );
